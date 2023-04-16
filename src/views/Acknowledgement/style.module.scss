@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100vw;
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+        font-size: 37px;
+        font-weight: 500;
+    }
+
+    p {
+        width: 59ch;
+        font-size: 20px;
+        text-align: justify;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1025px)  { 
+    .container p {
+        width: 25ch;
+    }
+}

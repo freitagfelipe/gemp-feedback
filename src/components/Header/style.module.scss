@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+
+.header {
+    height: fit-content;
+    width: 100vw;
+    background-color: $dark;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .link {
+                border-bottom: 2px solid transparent;
+                padding: 0em 0.2em;
+                font-size: 1em;
+                font-weight: 500;
+                font-family: inherit;
+                color: inherit;
+                background-color: $dark;
+                cursor: pointer;
+                transition: border-color 0.25s;
+                outline: none;
+                text-decoration: none;
+
+                &:hover, &:focus, &:focus-visible {
+                    border-color: $purple;
+                }
+            }
+
+            .active {
+                border-color: $purple;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px)  { 
+    .header .nav h1 {
+        font-size: 18px;
+    }
+}

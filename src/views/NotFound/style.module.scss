@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    .link {
+        border-radius: 8px;
+        border: 2px solid transparent;
+        padding: 0.4em 1.2em;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        color: inherit;
+        background-color: $dark;
+        cursor: pointer;
+        transition: border-color 0.25s;
+        margin-top: 2rem;
+        outline: none;
+        text-decoration: none;
+
+        &:hover, &:focus, &:focus-visible {
+            border-color: $purple;
+        }
+    }
+}

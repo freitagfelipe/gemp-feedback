@@ -6,10 +6,10 @@ interface Props {
 
 export default function Error({ reason }: Props) {
     return (
-        <div className={style.container}>
-            <h1>Oops!</h1>
+        <div className={style.error_container}>
+            <h1 className={style.error_container__title}>Oops!</h1>
 
-            <p>{reason}</p>
+            <p className={style.error_container__reason}>{reason}</p>
         </div>
     );
 }

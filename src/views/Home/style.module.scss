@@ -1,0 +1,27 @@
+@import "../../colors.scss";
+
+.main_content_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    padding: var(--main-content-padding);
+
+    &__title {
+        text-align: center;
+        font-size: var(--title-font-size);
+        font-weight: var(--title-font-weight);
+        color: $text-color-black;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

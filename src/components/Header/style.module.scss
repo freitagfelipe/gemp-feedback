@@ -1,0 +1,49 @@
+@import "../../colors.scss";
+
+.header {
+    height: fit-content;
+    width: 100vw;
+    background-color: $bg-dark;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--header-nav-padding);
+        user-select: none;
+
+        &__title {
+            font-size: var(--header-logo-font-size);
+            font-weight: var(--title-font-weight);
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--header-container-gap);
+
+            &__link {
+                border-bottom: var(--header-border-bottom-width) solid transparent;
+                padding: 0em 0.2rem;
+                font-size: var(--header-button-font-size);
+                font-weight: var(--button-font-weight);
+                color: $text-color-white;
+                background-color: $bg-dark;
+                cursor: pointer;
+                transition: border-color 0.25s;
+                outline: none;
+                text-decoration: none;
+
+                &:hover, &:focus, &:focus-visible {
+                    border-color: $radius-color;
+                }
+
+                &_active {
+                    border-color: $radius-color;
+                }
+            }
+        }
+    }
+}

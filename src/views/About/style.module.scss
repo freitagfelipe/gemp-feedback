@@ -1,0 +1,24 @@
+@import "../../colors.scss";
+
+.main_content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    color: $text-color-black;
+    padding: var(--main-content-padding);
+
+    &__title {
+        font-size: var(--title-font-size);
+        font-weight: var(--title-font-weight);
+    }
+
+    &__text {
+        width: var(--paragraph-width);
+        font-size: var(--paragraph-font-size);
+        text-align: justify;
+        font-weight: var(--normal-text-weight);
+        margin-bottom: 3rem;
+    }
+}

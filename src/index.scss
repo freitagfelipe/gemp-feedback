@@ -1,15 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+:root {
+    --header-logo-font-size: 2rem;
+    --header-button-font-size: 1.2rem;
+    --header-nav-padding: 1rem 2rem;
+    --header-border-bottom-width: 2px;
+    --header-container-gap: 30px;
+
+    --main-content-padding: 0;
+
+    --title-font-size: 2rem;
+
+    --card-title-font-size: 1.3rem;
+    --card-width: 50%;
+    --card-text-font-size: 1rem;
+    --card-padding: 2rem 1.5rem;
+    --card-input-height: 5rem;
+    --card-section-gap: 1.5rem;
+    --card-margin-bottom: 0;
+
+    --paragraph-font-size: 1.15rem;
+    --paragraph-width: 60ch;
+
+    --button-font-size: 1rem;
+
+    --title-font-weight: 600;
+    --normal-text-weight: 400;
+    --button-font-weight: 500;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    text-rendering: optimizeLegibility;
     font-synthesis: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+    user-select: none;
 }
 
+@media only screen and (max-width: 600px) {
+    :root {
+        --header-logo-font-size: 1.8rem;
+        --header-button-font-size: 1.3rem;
+
+        --title-font-size: 2.7rem;
+
+        --card-title-font-size: 1.5rem;
+        --card-padding: 1rem 1rem;
+        --card-width: 80%;
+        --card-text-font-size: 1.1rem;
+        --card-section-gap: 1rem;
+
+        --paragraph-font-size: 1.25rem;
+        --paragraph-width: 25ch;
+
+        --button-font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --header-logo-font-size: 1.8rem;
+        --header-button-font-size: 1.3rem;
+
+        --title-font-size: 2.7rem;
+
+        --card-title-font-size: 1.5rem;
+        --card-padding: 1rem 1rem;
+        --card-width: 80%;
+        --card-text-font-size: 1.1rem;
+        --card-section-gap: 1rem;
+
+        --paragraph-font-size: 1.25rem;
+        --paragraph-width: 35ch;
+
+        --button-font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --main-content-padding: 2rem;
+
+        --card-width: 60%;
+        
+        --paragraph-width: 55ch;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        --main-content-padding: 0;
+        
+        --card-section-gap: 1.8rem;
+        --card-width: 50%;
+        --card-margin-bottom: 0.3rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    :root {
+        --header-logo-font-size: 1.9rem;
+        --header-button-font-size: 1.7rem;
+        --header-border-bottom-width: 2.5px;
+
+        --title-font-size: 3.5rem;
+
+        --card-title-font-size: 2rem;
+        --card-padding: 1.5rem;
+        --card-text-font-size: 1.5rem;
+        --card-margin-bottom: 1rem;
+        --card-input-height: 8rem;
+
+        --paragraph-font-size: 1.9rem;
+        --paragraph-width: 55ch;
+
+        --button-font-size: 1.7rem;    
+    }
+}

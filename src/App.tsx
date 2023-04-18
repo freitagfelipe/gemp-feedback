@@ -6,26 +6,29 @@ import ErrorPage from "./views/ErrorPage";
 import NotFound from "./views/NotFound";
 import "./App.scss";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home />,
-        errorElement: <NotFound />
-    },
-    {
-        path: "/about",
-        element: <About />,
-    },
-    {
-        path: "/acknowledgement",
-        element: <Acknowledgement />
-    },
-    {
-        path: "/error",
-        element: <ErrorPage />,
-        index: false,
-    }
-], { basename: "/gemp-feedback" });
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <Home />,
+            errorElement: <NotFound />,
+        },
+        {
+            path: "/about",
+            element: <About />,
+        },
+        {
+            path: "/acknowledgement",
+            element: <Acknowledgement />,
+        },
+        {
+            path: "/error",
+            element: <ErrorPage />,
+            index: false,
+        },
+    ],
+    { basename: "/gemp-feedback" }
+);
 
 function App() {
     return <RouterProvider router={router} />;

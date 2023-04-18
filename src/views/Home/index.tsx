@@ -25,13 +25,16 @@ export default function Home() {
         e.preventDefault();
 
         try {
-            const result = await axios.get(`${import.meta.env.VITE_API_URL!}/send?type=${feedbackType}&text=${text}`);
+            const result = await axios.get(
+                `${import.meta.env
+                    .VITE_API_URL!}/send?type=${feedbackType}&text=${text}`
+            );
 
             if (result.status === 200) {
                 navigate("/acknowledgement");
 
                 return;
-            } 
+            }
 
             throw new Error("Fetch returned status !== 200");
         } catch (_) {
@@ -44,12 +47,24 @@ export default function Home() {
             <Header />
 
             <div className={style.main_content_container}>
-                <h2 className={style.main_content_container__title}>Feedback</h2>
+                <h2 className={style.main_content_container__title}>
+                    Feedback
+                </h2>
 
-                <form onSubmit={e => onSubmit(e)} className={style.main_content_container__form}>
-                    <Card onTypeChange={onFeedbackTypeChange} onTextChange={onTextChange} />
+                <form
+                    onSubmit={(e) => onSubmit(e)}
+                    className={style.main_content_container__form}
+                >
+                    <Card
+                        onTypeChange={onFeedbackTypeChange}
+                        onTextChange={onTextChange}
+                    />
 
-                    <SubmitButton disabled={text === "" || feedbackType === null}>Enviar</SubmitButton>
+                    <SubmitButton
+                        disabled={text === "" || feedbackType === null}
+                    >
+                        Enviar
+                    </SubmitButton>
                 </form>
             </div>
         </>

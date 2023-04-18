@@ -10,10 +10,11 @@ export default function About() {
 
                 <p className={style.main_content_container__text}>
                     Qualquer envio de formulário realizado por meio deste site
-                    servirá como um meio para vocês me darem um feedback
-                    sobre o que vocês gostaram ou não gostaram das
-                    aulas que já tivemos. O envio será
-                    anônimo e apenas servirá para me ajudar a melhorar. Lembrando que o uso desse site é exclusivo para as minhas turmas.
+                    servirá como um meio para vocês me darem um feedback sobre o
+                    que vocês gostaram ou não gostaram das aulas que já tivemos.
+                    O envio será anônimo e apenas servirá para me ajudar a
+                    melhorar. Lembrando que o uso desse site é exclusivo para as
+                    minhas turmas.
                 </p>
             </div>
         </>

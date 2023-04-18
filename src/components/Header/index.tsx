@@ -11,7 +11,10 @@ export default function Header() {
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            `${style.header__nav__container__link} ${isActive && style.header__nav__container__link_active}`
+                            `${style.header__nav__container__link} ${
+                                isActive &&
+                                style.header__nav__container__link_active
+                            }`
                         }
                     >
                         Início
@@ -20,7 +23,10 @@ export default function Header() {
                     <NavLink
                         to="/about"
                         className={({ isActive }) =>
-                            `${style.header__nav__container__link} ${isActive && style.header__nav__container__link_active}`
+                            `${style.header__nav__container__link} ${
+                                isActive &&
+                                style.header__nav__container__link_active
+                            }`
                         }
                     >
                         Sobre

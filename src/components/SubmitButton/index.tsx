@@ -7,6 +7,11 @@ interface Props {
 
 export default function SubmitButton({ children, disabled }: Props) {
     return (
-        <input disabled={disabled} type="submit" value={children} className={style.submit_button} />
+        <input
+            disabled={disabled}
+            type="submit"
+            value={children}
+            className={style.submit_button}
+        />
     );
 }

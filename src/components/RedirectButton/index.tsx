@@ -7,9 +7,9 @@ interface Props {
     className?: string;
 }
 
-export default function RedirectButton({ to, children, className }: Props) {
+export default function RedirectButton({ to, children, className}: Props) {
     return (
-        <Link to={to} className={`${style.link} ${className}`}>
+        <Link to={to} className={`${style.redirect_button} ${className}`}>
             { children }
         </Link>
     );

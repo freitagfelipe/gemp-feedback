@@ -1,0 +1,76 @@
+@import "../../colors.scss";
+
+.card {
+    background-color: $bg-dark;
+    padding: var(--card-padding);
+    border-radius: 5px;
+    width: var(--card-width);
+    margin-top: 2rem;
+    margin-bottom: var(--card-margin-bottom);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    &__title {
+        font-size: var(--card-title-font-size);
+
+        &::after {
+            content: '*';
+            color: crimson;
+            margin-left: 2px;
+        }
+    }
+
+    & h3:nth-of-type(2) {
+        margin-top: var(--card-section-gap);
+    }
+
+    &__feedback_type {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 0.5rem;
+        font-size: var(--card-text-font-size);
+        color: $text-color-white;
+
+        &__checkbox_container {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 5px;
+            height: 100%;
+
+            &__checkbox {
+                width: var(--card-text-font-size);
+                height: var(--card-text-font-size);
+                outline: none;
+
+                &:focus {
+                    padding: 0px;
+                }
+            }
+
+            &__description {
+                font-size: var(--card-text-font-size);
+            }
+        }
+    }
+
+    &__feedback_input {
+        width: 100%;
+
+        &__textarea {
+            margin-top: 0.5rem;
+            resize: none;
+            outline: none;
+            padding: 5px;
+            width: 100%;
+            height: var(--card-input-height);
+            border: 2px solid transparent;
+            transition: 0.1s;
+            font-size: var(--card-text-font-size);
+
+            &:focus, &:active {
+                border-color: $radius-color;
+            }
+        }
+    }
+}

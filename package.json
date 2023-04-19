@@ -14,7 +14,7 @@
     "homepage": "https://github.com/freitagfelipe/gemp-feedback#readme",
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build",
+        "build": "tsc && vite build && cp _redirects dist/",
         "preview": "vite preview",
         "prettier": "npx prettier --write \"**/*.{ts,json,tsx,html,json}\""
     },

@@ -27,7 +27,6 @@ const router = createBrowserRouter(
             index: false,
         },
     ],
-    { basename: "/gemp-feedback" }
 );
 
 function App() {

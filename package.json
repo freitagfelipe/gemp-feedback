@@ -1,7 +1,7 @@
 {
     "name": "gemp-feedback",
     "private": true,
-    "version": "0.0.0",
+    "version": "1.0.0",
     "type": "module",
     "repository": {
         "type": "git",
@@ -14,7 +14,7 @@
     "homepage": "https://github.com/freitagfelipe/gemp-feedback#readme",
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build && cp _redirects dist/",
+        "build": "tsc && vite build",
         "preview": "vite preview",
         "prettier": "npx prettier --write \"**/*.{ts,json,tsx,html,json}\""
     },
